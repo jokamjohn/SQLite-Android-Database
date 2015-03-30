@@ -17,9 +17,11 @@ public class ForecastHelper extends SQLiteOpenHelper {
         super(context, DB_NAME, null, DB_VERSION);
     }
     //Creating the Database and Adding columns
-    private static final String DB_CREATE = "CREATE TABLE" + ForecastContract.ForecastEntry.TABLE_TEMPERATURE +
-            " (" + ForecastContract.ForecastEntry.COLUMN_ID + "INTEGER PRIMARY KEY" + ForecastContract.ForecastEntry.COLUMN_TEMPERATURE +
-            "REAL)";
+    private static final String DB_CREATE =
+            "CREATE TABLE " + ForecastContract.ForecastEntry.TABLE_TEMPERATURE + " (" +
+                    ForecastContract.ForecastEntry.COLUMN_ID + " INTEGER PRIMARY KEY," +
+                    ForecastContract.ForecastEntry.COLUMN_TEMPERATURE + " REAL)";
+
 
     @Override
     public void onCreate(SQLiteDatabase db) {
