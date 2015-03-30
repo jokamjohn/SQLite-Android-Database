@@ -7,6 +7,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 /**
  * Created by JOHN KAGGA on 3/30/2015.
  */
+
+    //This class defines and updates the Database
 public class ForecastHelper extends SQLiteOpenHelper {
     public static final String DB_NAME = "temperatures.db";
     private static final int DB_VERSION = 1;
